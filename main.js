@@ -9,7 +9,10 @@ var cognome_utente = prompt('Quale è il tuo cognome? (scrivi il tuo nome per es
 var colore_prefe = prompt('Quale è il tuo colore preferito?');
 //estrapolare l'anno corrente
 var data_corrente = new Date();
-var anno_corrente = data_corrente.getYear();
-console.log(anno_corrente);
-//generare una password nome-cognome-colore-20
-document.writeln('la tua password è: ' + nome_utente + cognome_utente + colore_prefe + anno_corrente);
+var anno_corrente = data_corrente.getFullYear();
+
+if (anno_corrente == '2020') {
+document.writeln('la tua password è: ' + nome_utente + cognome_utente + colore_prefe + 20);
+}
+// //generare una password nome-cognome-colore-20
+// document.writeln('la tua password è: ' + nome_utente + cognome_utente + colore_prefe + anno_corrente);

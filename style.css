@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 100px;
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#password {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+}

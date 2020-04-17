@@ -10,9 +10,11 @@ var colore_prefe = prompt('Quale è il tuo colore preferito?');
 //estrapolare l'anno corrente
 var data_corrente = new Date();
 var anno_corrente = data_corrente.getFullYear();
+var numero2cifre;
 
-if (anno_corrente == '2020') {
-document.writeln('la tua password è: ' + nome_utente + cognome_utente + colore_prefe + 20);
+if (anno_corrente >= '2000') {
+    var numero2cifre = anno_corrente - 2000;
+    document.writeln('la tua password è: ' + nome_utente + cognome_utente + colore_prefe + numero2cifre);
 }
 // //generare una password nome-cognome-colore-20
 // document.writeln('la tua password è: ' + nome_utente + cognome_utente + colore_prefe + anno_corrente);
